@@ -1,3 +1,19 @@
-header img {
-  height: 100px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+}
+
+img {
+  border-radius: 10%;
+  height: 200px;
+  width: 200px;
+}
+
+li {
+  list-style: none;
 }
