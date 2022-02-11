@@ -1,20 +1,38 @@
-const gettingCat = async () => {
-    const url = `https://api.thecatapi.com/v1/images/search`;
-    const response = await fetch (url), {
-        headers: {
-         'x-api-key': 'f69f168c-559c-46ca-9df9-95fbfd3df073',
-        }
-    }
+const gettingData = async () => {
+    const url = `https://api.thecatapi.com/v1/images/search?limit=6&page=10&order=Desc`;
+    const response = await fetch (url);
     const result = await response.json();
     return result;
 }
 
-console.log(gettingCat('bengal'));
-
-const createElements = () => {
-    const ol = document.getElementById('galeria');
+const createKitty = async (elements) => {
+    const ol = document.querySelector('#galeria');
+        elements.forEach((element) => {
+        const cats= document.createElement('img');
+        cats.setAttribute('src',element.url)
+        ol.appendChild(cats);
+    })
 }
+
+    
+
+// console.log(gettingCat());
+// console.log(gettingCat())
+/* function fetchPics() {
+    fetch('https://api.thecatapi.com/v1/images/search')
+    .then(response => response.json())
+    .then((data) =>{
+        console.log(data)
+    })
+} */
+
+/* const createElements = () => {
+    const ol = document.getElementById('galeria'); */
+
 
 window.onload = async () => {
-   await gettingCat();
+   const gData = await gettingData();
+   const gKitty = await createKitty(gData);
 }
+ 
+  // --header 'x-api-key: DEMO-API-KEY'
