@@ -1,8 +1,11 @@
+@import url(//db.onlinewebfonts.com/c/b1763f89102fde2cd1fdc592773be9f0?family=Cat+Font);
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   cursor: url('./Gatinhos-fofos/patinhazinha.png'), auto;
+  font-family: "Cat Font", sans-serif;
 }
 
 html, body {
