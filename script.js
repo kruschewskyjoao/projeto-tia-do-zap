@@ -74,12 +74,12 @@ cleanText.addEventListener('click', () => {
     });
 });
 
-const download = () => {
+/* const download = () => {
     const canvas = document.querySelector('#my-canvas');
     canvas.toBlob(function(blob){
         saveAs(blob, image.png)
     })
-}
+} */
 
 window.onload = async () => {
    const gData = await gettingData();
