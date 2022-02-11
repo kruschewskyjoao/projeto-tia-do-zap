@@ -40,7 +40,8 @@ botao.addEventListener('click', async () => {
 
     ol.innerHTML = '';
     
-    await createKitty(func);  
+    await createKitty(func);
+    await createClickImage();  
 });
 
 
@@ -56,8 +57,6 @@ botao.addEventListener('click', async () => {
 
 /* const createElements = () => {
     const ol = document.getElementById('galeria'); */
-
-    // randomCats();
 
 window.onload = async () => {
    const gData = await gettingData();
