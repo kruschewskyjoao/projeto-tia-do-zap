@@ -7,7 +7,13 @@
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+
+.whats {
+  height: 50px;
+  width: 50px;
 }
 
 img {
@@ -19,3 +25,13 @@ img {
 li {
   list-style: none;
 }
+
+.section-text {
+
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
