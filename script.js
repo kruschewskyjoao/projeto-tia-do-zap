@@ -31,19 +31,18 @@ const createClickImage = async () => {
 }
 
 
-const randomCats = async () => {
-    const ol = document.querySelector('#galeria');
-    const botao = document.querySelector('.new-cats');
-    const func = await gettingData();
-    const img = document.querySelectorAll('.cats-image');
-
-    botao.addEventListener('click', () => {
-
-        ol.innerHTML = '';
+const ol = document.querySelector('#galeria');
+const botao = document.querySelector('.new-cats');
+const img = document.querySelectorAll('.cats-image');
     
-        createKitty(func);  
-    });
-}
+botao.addEventListener('click', async () => {
+    const func = await gettingData();
+
+    ol.innerHTML = '';
+    
+    await createKitty(func);  
+});
+
 
 // console.log(gettingCat());
 // console.log(gettingCat())
@@ -58,7 +57,7 @@ const randomCats = async () => {
 /* const createElements = () => {
     const ol = document.getElementById('galeria'); */
 
-    randomCats();
+    // randomCats();
 
 window.onload = async () => {
    const gData = await gettingData();
