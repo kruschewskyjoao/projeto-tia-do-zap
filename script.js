@@ -23,6 +23,7 @@ const createClickImage = async () => {
             const newCat = document.createElement('img');
 
             newCat.src = cat.src;
+            newCat.className = 'cat-message';
             
             div.innerHTML = '';
             div.appendChild(newCat);

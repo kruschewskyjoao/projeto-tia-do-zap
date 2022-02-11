@@ -1,16 +1,56 @@
-@import url(//db.onlinewebfonts.com/c/b1763f89102fde2cd1fdc592773be9f0?family=Cat+Font);
+:root {
+  --cotton-candy: rgba(253, 197, 245, 1);
+  --cotton-candy2: rgb(253, 197, 245, 0.1);
+  --plum-web: rgba(247, 174, 248, 1);
+  --plum-web2: rgb(247, 174, 248, 0.4);
+  --lavender-floral: rgba(179, 136, 235, 1);
+  --cornflower-blue: rgba(128, 147, 241, 1);
+  --sky-blue-crayola: rgba(114, 221, 247, 1); 
+} 
+
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   cursor: url('./Gatinhos-fofos/patinhazinha.png'), auto;
-  font-family: "Cat Font", sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Sacramento', cursive;
+  font-weight: 100;
 }
 
 html, body {
   width: 100%;
   height: 100%;
+  background-image: linear-gradient(
+  180deg,
+  hsl(299deg 87% 79%) 0%,
+  hsl(299deg 87% 79%) 0%,
+  hsl(299deg 87% 80%) 0%,
+  hsl(299deg 86% 80%) 0%,
+  hsl(299deg 86% 81%) 0%,
+  hsl(299deg 85% 81%) 1%,
+  hsl(299deg 85% 82%) 1%,
+  hsl(299deg 84% 82%) 2%,
+  hsl(300deg 83% 83%) 3%,
+  hsl(301deg 83% 84%) 4%,
+  hsl(302deg 84% 85%) 6%,
+  hsl(303deg 85% 86%) 7%,
+  hsl(304deg 85% 88%) 9%,
+  hsl(305deg 85% 89%) 11%,
+  hsl(306deg 84% 90%) 14%,
+  hsl(308deg 83% 91%) 17%,
+  hsl(308deg 83% 91%) 20%,
+  hsl(308deg 83% 92%) 24%,
+  hsl(308deg 84% 93%) 28%,
+  hsl(308deg 85% 94%) 34%,
+  hsl(307deg 85% 94%) 40%,
+  hsl(307deg 86% 95%) 48%,
+  hsl(307deg 88% 96%) 59%,
+  hsl(307deg 89% 96%) 79%
+);
 }
 
 #container {
@@ -28,6 +68,24 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 60px;
+}
+
+#title {
+  text-align: center;
+  font-family: Twinkle Star, cursive;
+  font-weight: 800;
+  font-size: 50px;
+  color: var(--cornflower-blue);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: var(--plum-web2);
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 main {
@@ -52,18 +110,61 @@ li {
   list-style: none;
 }
 
-.section-text {
-
-}
 
 .section-galeria {
   width: 350px;
+}
+
+.section-result {
+  width: 400px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-evenly;
+
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  height: 360px;
+  width: 360px;
+  border: 10px dashed var(--cornflower-blue);
+  border-radius: 10%;
+}
+
+.textImage {
+  display: flex;
+  align-self: baseline;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-size: 30px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.cat-message {
+  position: absolute;
+  z-index: 1;
+  width: 335px;
+  height: 335px;
 }
 
 #galeria {
   display: flex;
   flex-flow: wrap row;
   justify-content: space-evenly
+}
+
+#save {
+ margin: 15px; 
 }
 
 footer {
