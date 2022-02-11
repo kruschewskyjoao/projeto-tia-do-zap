@@ -31,6 +31,7 @@ const createClickImage = async () => {
 }
 
 
+
 const ol = document.querySelector('#galeria');
 const botao = document.querySelector('.new-cats');
 const img = document.querySelectorAll('.cats-image');
@@ -40,8 +41,36 @@ botao.addEventListener('click', async () => {
 
     ol.innerHTML = '';
     
-    await createKitty(func);
-    await createClickImage();  
+    await createKitty(func);  
+    await createClickImage();
+});
+
+const createText = () => {
+    const inputText = document.querySelector('.input-text');
+    const imageConteiner = document.querySelector('.image-container');
+    const firstParagraph = document.createElement('p');
+    firstParagraph.className = 'textImage'
+    firstParagraph.innerText = inputText.value;
+    imageConteiner.appendChild(firstParagraph);
+    inputText.value = '';
+}
+
+
+const buttonUp = document.querySelector('.button-up');
+buttonUp.addEventListener('click', createText);
+
+const buttonDown = document.querySelector('.button-down');
+buttonDown.addEventListener('click', createText);
+
+const buttonCenter = document.querySelector('.button-center');
+buttonCenter.addEventListener('click', createText);
+
+const cleanText = document.querySelector('.clean')
+cleanText.addEventListener('click', () => {
+    const paragraphs = document.querySelectorAll('.textImage');
+    paragraphs.forEach((paragraph) => {
+        paragraph.innerHTML = '';
+    });
 });
 
 
