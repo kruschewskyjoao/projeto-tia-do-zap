@@ -74,19 +74,12 @@ cleanText.addEventListener('click', () => {
     });
 });
 
-
-// console.log(gettingCat());
-// console.log(gettingCat())
-/* function fetchPics() {
-    fetch('https://api.thecatapi.com/v1/images/search')
-    .then(response => response.json())
-    .then((data) =>{
-        console.log(data)
+const download = () => {
+    const canvas = document.querySelector('#my-canvas');
+    canvas.toBlob(function(blob){
+        saveAs(blob, image.png)
     })
-} */
-
-/* const createElements = () => {
-    const ol = document.getElementById('galeria'); */
+}
 
 window.onload = async () => {
    const gData = await gettingData();
@@ -95,4 +88,3 @@ window.onload = async () => {
    createClickImage();
 }
  
-  // --header 'x-api-key: DEMO-API-KEY'
