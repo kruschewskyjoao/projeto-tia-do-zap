@@ -5,10 +5,32 @@
   cursor: url('./Gatinhos-fofos/patinhazinha.png'), auto;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: stretch; 
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   padding: 10px 60px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
 }
 
 .whats {
@@ -18,8 +40,8 @@ header {
 
 img {
   border-radius: 10%;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 li {
@@ -30,7 +52,17 @@ li {
 
 }
 
-main {
+.section-galeria {
+  width: 350px;
+}
+
+#galeria {
   display: flex;
-  justify-content: space-evenly;
+  flex-flow: wrap row;
+  justify-content: space-evenly
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
