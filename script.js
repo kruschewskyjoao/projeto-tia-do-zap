@@ -106,6 +106,7 @@ cleanText.addEventListener('click', () => {
     meaw.play();
 });
 
+// Window.onload:
 window.onload = async () => {
    const gData = await gettingData();
    const gKitty = await createKitty(gData);
