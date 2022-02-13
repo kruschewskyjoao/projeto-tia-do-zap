@@ -17,11 +17,14 @@
 }
 
 h1, h2 {
-  font-family: 'Sacramento', cursive;
-  font-weight: 100;
   color: var(--cornflower-blue);
   font-weight: 400;
   text-shadow: 1px 1px 2px var(--lavender-floral);
+}
+
+h1 {
+  font-family: Akaya Telivigala, cursive;
+  font-size: 45px;
 }
 
 h2 {
@@ -74,24 +77,9 @@ header, main, footer {
 header {
   display: flex;
   min-height: 10%;
+  align-items: center;
   justify-content: space-between;
-  padding: 10px 60px;
-}
-
-#title {
-  text-align: center;
-  font-family: Twinkle Star, cursive;
-  font-weight: 800;
-  font-size: 50px;
-  color: var(--cornflower-blue);
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-header {
   background-color: var(--plum-web2);
-  padding-top: 15px;
-  padding-bottom: 10px;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -103,8 +91,9 @@ main {
 }
 
 .whats {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
+  margin-right: 50px;
 }
 
 img {
