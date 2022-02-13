@@ -48,33 +48,54 @@ botao.addEventListener('click', async () => {
     await createClickImage();
 });
 
-const createText = () => {
+const alinhamento = (item, classe) => {
+  if (classe === 'button-up' || classe === 'p-up') {
+    item.classList.add('text-start')
+  } else if (classe === 'button-center' || classe === 'p-center') {
+    item.classList.add('text-center');
+  } else {
+    item.classList.add('text-end');
+  }
+}
+
+const createText = (event) => {
     const inputText = document.querySelector('.input-text');
     const imageConteiner = document.querySelector('.image-container');
     const firstParagraph = document.createElement('p');
+
     firstParagraph.className = 'textImage'
     firstParagraph.innerText = inputText.value;
+
+    alinhamento(firstParagraph, event.target.className);
+
     imageConteiner.appendChild(firstParagraph);
     inputText.value = '';
 }
 
 const buttonUp = document.querySelector('.button-up');
-buttonUp.addEventListener('click', () => {
-    createText();
+buttonUp.addEventListener('click', (event) => {
+    createText(event);
     meaw.play();
 });
 
 const buttonDown = document.querySelector('.button-down');
-buttonDown.addEventListener('click', () => {
-    createText();
+buttonDown.addEventListener('click', (event) => {
+    createText(event);
     meaw.play();
 });
 
 const buttonCenter = document.querySelector('.button-center');
-buttonCenter.addEventListener('click', () => {
-    createText();
+buttonCenter.addEventListener('click', (event) => {
+    createText(event);
     meaw.play();
 });
+
+const opUp = document.querySelector('.p-up');
+opUp.addEventListener('click', createText);
+const opCentro = document.querySelector('.p-center');
+opCentro.addEventListener('click', createText);
+const opDown = document.querySelector('.p-down');
+opDown.addEventListener('click', createText);
 
 const cleanText = document.querySelector('.clean')
 cleanText.addEventListener('click', () => {

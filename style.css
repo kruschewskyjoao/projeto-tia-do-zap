@@ -1,13 +1,13 @@
 :root {
   --cotton-candy: rgba(253, 197, 245, 1);
   --cotton-candy2: rgb(253, 197, 245, 0.1);
+  --cotton-candy3: rgb(253, 197, 245, 0.4);
   --plum-web: rgba(247, 174, 248, 1);
   --plum-web2: rgb(247, 174, 248, 0.4);
   --lavender-floral: rgba(179, 136, 235, 1);
   --cornflower-blue: rgba(128, 147, 241, 1);
   --sky-blue-crayola: rgba(114, 221, 247, 1); 
 } 
-
 
 * {
   box-sizing: border-box;
@@ -19,6 +19,14 @@
 h1, h2 {
   font-family: 'Sacramento', cursive;
   font-weight: 100;
+  color: var(--cornflower-blue);
+  font-weight: 400;
+  text-shadow: 1px 1px 2px var(--lavender-floral);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 html, body {
@@ -49,13 +57,12 @@ html, body {
   hsl(307deg 85% 94%) 40%,
   hsl(307deg 86% 95%) 48%,
   hsl(307deg 88% 96%) 59%,
-  hsl(307deg 89% 96%) 79%
-);
+  hsl(307deg 89% 96%) 79%);
 }
 
 #container {
   display: flex;
-  min-height: 100%;
+  min-height: 80%;
   flex-direction: column;
   align-items: stretch; 
 }
@@ -66,6 +73,7 @@ header, main, footer {
 
 header {
   display: flex;
+  min-height: 10%;
   justify-content: space-between;
   padding: 10px 60px;
 }
@@ -110,21 +118,41 @@ li {
   list-style: none;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border: 10px double var(--cotton-candy3);
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px var(--cotton-candy),
+    -2px -2px 6px var(--cotton-candy),
+    -2px 2px 6px var(--cotton-candy),
+    2px -2px 6px var(--cotton-candy);
+}
 
 .section-galeria {
   width: 350px;
 }
 
+.section-galeria img {
+  box-shadow: 2px 2px 4px var(--lavender-floral);
+}
+
+.new-cats {
+  margin-bottom: 30px;
+}
+
 .section-result {
+  align-items: center;
   width: 400px;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 220px;
   justify-content: space-evenly;
-
 }
 
 .image-container {
@@ -140,7 +168,6 @@ li {
 
 .textImage {
   display: flex;
-  align-self: baseline;
   flex-wrap: wrap;
   position: absolute;
   z-index: 2;
@@ -148,6 +175,18 @@ li {
   font-size: 30px;
   margin-left: 35px;
   margin-top: 10px;
+}
+
+.text-start {
+  align-self: flex-start;
+}
+
+.text-center {
+  align-self: center;
+}
+
+.text-end {
+  align-self: flex-end;
 }
 
 .cat-message {
@@ -167,7 +206,99 @@ li {
  margin: 15px; 
 }
 
-footer {
+button {
+  border: 1px solid var(--plum-web);
+  background-color: var(--cotton-candy2);
+  box-shadow: 1px 1px 5px var(--lavender-floral);
+  padding: 5px;
+  margin: 1%;
+}
+
+button:hover {
+  color: white;
+  background-color: var(--cotton-candy);
+  box-shadow: 1px 1px 5px var(--cornflower-blue);
+}
+
+button:active {
+  box-shadow: 1px 1px 5px var(--sky-blue-crayola);
+}
+
+.ocult {
   display: flex;
   justify-content: center;
+  align-self: stretch;
+  overflow: hidden;
+}
+
+.ocult p {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  outline: none;
+  padding: 10px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 5px 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content p:hover {
+  background-color: var(--cotton-candy2);
+  color: var(--plum-web);
+  text-shadow: 1px 1px 1px white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.clean-text {
+  align-self: center;
+}
+
+#save, .clean {
+  padding: 5px 50px;
+  border-radius: 15px;
+}
+
+footer {
+  display: flex;
+  min-height: 8%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer p {
+  color: var(--plum-web);
+  font-weight: 700;
+  text-shadow: 1px 1px 2px var(--cornflower-blue);
 }
