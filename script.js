@@ -1,3 +1,5 @@
+const meaw = new Audio('soundOfCat.mp3');
+
 const gettingData = async () => {
     const url = `https://api.thecatapi.com/v1/images/search?limit=6&page=10&order=Desc`;
     const response = await fetch (url);
@@ -27,6 +29,7 @@ const createClickImage = async () => {
             
             div.innerHTML = '';
             div.appendChild(newCat);
+            meaw.play();
         })
     });
 }
@@ -40,6 +43,7 @@ botao.addEventListener('click', async () => {
 
     ol.innerHTML = '';
     
+    meaw.play();
     await createKitty(func);  
     await createClickImage();
 });
@@ -55,13 +59,22 @@ const createText = () => {
 }
 
 const buttonUp = document.querySelector('.button-up');
-buttonUp.addEventListener('click', createText);
+buttonUp.addEventListener('click', () => {
+    createText();
+    meaw.play();
+});
 
 const buttonDown = document.querySelector('.button-down');
-buttonDown.addEventListener('click', createText);
+buttonDown.addEventListener('click', () => {
+    createText();
+    meaw.play();
+});
 
 const buttonCenter = document.querySelector('.button-center');
-buttonCenter.addEventListener('click', createText);
+buttonCenter.addEventListener('click', () => {
+    createText();
+    meaw.play();
+});
 
 const cleanText = document.querySelector('.clean')
 cleanText.addEventListener('click', () => {
@@ -69,14 +82,8 @@ cleanText.addEventListener('click', () => {
     paragraphs.forEach((paragraph) => {
         paragraph.innerHTML = '';
     });
+    meaw.play();
 });
-
-const download = () => {
-    const canvas = document.querySelector('#my-canvas');
-    canvas.toBlob(function(blob){
-        saveAs(blob, image.png)
-    })
-}
 
 window.onload = async () => {
    const gData = await gettingData();
