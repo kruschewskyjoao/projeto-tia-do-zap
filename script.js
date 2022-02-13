@@ -31,8 +31,6 @@ const createClickImage = async () => {
     });
 }
 
-
-
 const ol = document.querySelector('#galeria');
 const botao = document.querySelector('.new-cats');
 const img = document.querySelectorAll('.cats-image');
@@ -55,7 +53,6 @@ const createText = () => {
     imageConteiner.appendChild(firstParagraph);
     inputText.value = '';
 }
-
 
 const buttonUp = document.querySelector('.button-up');
 buttonUp.addEventListener('click', createText);
