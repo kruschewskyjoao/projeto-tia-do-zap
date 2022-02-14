@@ -9,6 +9,27 @@
   --sky-blue-crayola: rgba(114, 221, 247, 1); 
 } 
 
+@media screen and (max-width: 600px) {
+  /* .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap !important;
+    background-color: black;
+  }
+
+  .section-result {
+    order: 2;
+  }
+
+  .section-personaliza {
+    order: 1;
+  }
+
+  .section-galeria {
+    order: 3;
+  } */
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -211,6 +232,10 @@ button:hover {
 
 button:active {
   box-shadow: 1px 1px 5px var(--sky-blue-crayola);
+}
+
+.input-text {
+  padding: 5px;
 }
 
 .ocult {
