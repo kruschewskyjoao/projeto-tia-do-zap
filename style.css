@@ -303,6 +303,142 @@ button:active {
   border-radius: 15px;
 }
 
+.color {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.decoration {
+  height: 35px;
+  width: 35px;
+  background-color: blue;
+  margin-right: 5px;
+  border-color: rgb(0, 0, 0);
+  border-style:double;
+  border-bottom-left-radius: 1px;
+  border-radius: 50%;
+}
+
+.decoration1 {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(173, 37, 173);
+  margin-right: 5px;
+  border-color: rgb(0, 0, 0);
+  border-style:double;
+  border-bottom-left-radius: 1px;
+  border-radius: 50%;
+}
+
+.decoration2 {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(70, 192, 125);
+  margin-right: 5px;
+  border-color: rgb(0, 0, 0);
+  border-style:double;
+  border-bottom-left-radius: 1px;
+  border-radius: 50%;
+}
+
+.decoration3 {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(214, 86, 26);
+  margin-right: 5px;
+  border-color: rgb(0, 0, 0);
+  border-style:double;
+  border-bottom-left-radius: 1px;
+  border-radius: 50%;
+}
+
+.decoration4 {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(251, 255, 32);
+  border-color: rgb(0, 0, 0);
+  margin-right: 5px;
+  border-style:double;
+  border-bottom-left-radius: 1px;
+  border-radius: 50%;
+}
+
+.decoration5 {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  border-style:double;
+  border-bottom-left-radius: 1px;
+  border-radius: 50%;
+}
+
+.fontStyle {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.font {
+  margin-top: -10px;
+  font-size: 45px;
+  font-family: Impact,Charcoal,sans-serif;
+  margin-right: 10px;
+}
+
+.font1 {
+  margin-top: -15px;
+  font-size: 45px;
+  font-family: 'Patrick Hand', cursive;
+  margin-right: 10px;
+}
+  
+.font2 {
+  margin-top: -10px;
+  font-size: 32px;
+  font-family: Bad Script, cursive;
+  margin-right: 10px;
+}
+  
+.font3 {
+  margin-top: -10px;
+  font-size: 45px;
+  font-family: Sacramento, cursive;
+  font-style: oblique;
+}
+  
+.sizeFont {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-evenly;
+}
+  
+.size1 {
+  margin-top: -5px;
+  font-size: 35px;
+}
+  
+.size2 {
+  margin-top: -12px;
+  font-size: 45px;
+}
+  
+.size3 {
+  margin-top: -17px;
+  font-size: 55px;
+}
+  
+.size4 {
+  margin-top: -26px;
+  font-size: 65px;
+}
+
 footer {
   display: flex;
   min-height: 8%;

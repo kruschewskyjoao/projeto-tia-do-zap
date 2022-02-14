@@ -1,0 +1,23 @@
+{
+  "name": "projeto-tia-do-zap",
+  "version": "1.0.0",
+  "description": "Projeto para o curso da Trybe de finalização do módulo de fundamentos",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kruschewskyjoao/projeto-tia-do-zap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kruschewskyjoao/projeto-tia-do-zap/issues"
+  },
+  "homepage": "https://github.com/kruschewskyjoao/projeto-tia-do-zap#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
