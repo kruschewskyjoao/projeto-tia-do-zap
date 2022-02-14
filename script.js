@@ -1,4 +1,5 @@
 const meaw = new Audio('soundOfCat.mp3');
+// import fetch from 'node-fetch';
 
 const gettingData = async () => {
   const url = 'https://api.thecatapi.com/v1/images/search?limit=6&page=10&order=Desc';

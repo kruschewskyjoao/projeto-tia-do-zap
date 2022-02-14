@@ -10,11 +10,14 @@
 } 
 
 @media screen and (max-width: 600px) {
-  /* .container {
+  header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap !important;
-    background-color: black;
+    width: 100%;
+  }
+  
+  #container {
+    display: flex;
+    flex-flow: row wrap;
   }
 
   .section-result {
@@ -27,7 +30,7 @@
 
   .section-galeria {
     order: 3;
-  } */
+  }
 }
 
 * {
@@ -253,6 +256,7 @@ button:active {
 }
 
 .dropdown {
+  display: none;
   float: left;
   overflow: hidden;
 }
@@ -317,7 +321,6 @@ button:active {
   background-color: blue;
   margin-right: 5px;
   border: 4px double rgba(0, 0, 0, 0.4);
-  border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
 
@@ -327,7 +330,6 @@ button:active {
   background-color: rgb(173, 37, 173);
   margin-right: 5px;
   border: 4px double rgba(0, 0, 0, 0.4);
-  border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
 
@@ -337,7 +339,6 @@ button:active {
   background-color: rgb(70, 192, 125);
   margin-right: 5px;
   border: 4px double rgba(0, 0, 0, 0.4);
-  border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
 
@@ -347,7 +348,6 @@ button:active {
   background-color: rgb(214, 86, 26);
   margin-right: 5px;
   border: 4px double rgba(0, 0, 0, 0.4);
-  border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
 
@@ -357,7 +357,6 @@ button:active {
   margin-right: 5px;
   background-color: rgb(251, 255, 32);
   border: 4px double rgba(0, 0, 0, 0.4);
-  border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
 
@@ -366,7 +365,6 @@ button:active {
   width: 35px;
   background-color: rgb(255, 255, 255);
   border: 4px double rgba(0, 0, 0, 0.4);
-  border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
 
