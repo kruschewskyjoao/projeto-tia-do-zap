@@ -9,7 +9,7 @@
   --sky-blue-crayola: rgba(114, 221, 247, 1); 
 } 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 999px) {
   header {
     display: flex;
     width: 100%;
@@ -21,15 +21,61 @@
   }
 
   .section-result {
-    order: 2;
+    align-items: center;
   }
 
-  .section-personaliza {
-    order: 1;
+  .color {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+  }
+
+  .fontStyle {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  #container {
+    display: flex;
+    min-height: 80%;
+    flex-direction: column;
+    align-items: stretch; 
+  }
+
+  header, main, footer {
+    flex-shrink: 0;
+  }
+
+  main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+  }
+
+  li {
+    list-style: none;
   }
 
   .section-galeria {
-    order: 3;
+    width: 350px;
+  }
+
+  .section-galeria img {
+    box-shadow: 2px 2px 4px var(--lavender-floral);
+  }
+
+  .section-result {
+    align-items: center;
+    width: 400px;
   }
 }
 
@@ -57,8 +103,6 @@ h2 {
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
   background-image: linear-gradient(
   180deg,
   hsl(299deg 87% 79%) 0%,
@@ -87,17 +131,6 @@ html, body {
   hsl(307deg 89% 96%) 79%);
 }
 
-#container {
-  display: flex;
-  min-height: 80%;
-  flex-direction: column;
-  align-items: stretch; 
-}
-
-header, main, footer {
-  flex-shrink: 0;
-}
-
 header {
   display: flex;
   min-height: 10%;
@@ -108,27 +141,17 @@ header {
   margin-bottom: 10px;
 }
 
-main {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-evenly;
+img {
+    border-radius: 10%;
+    height: 150px;
+    width: 150px;
+    margin: 2px;
 }
 
 .whats {
   height: 60px;
   width: 60px;
   margin-right: 50px;
-}
-
-img {
-  border-radius: 10%;
-  height: 150px;
-  width: 150px;
-  margin: 2px;
-}
-
-li {
-  list-style: none;
 }
 
 section {
@@ -144,21 +167,8 @@ section {
     2px -2px 6px var(--cotton-candy);
 }
 
-.section-galeria {
-  width: 350px;
-}
-
-.section-galeria img {
-  box-shadow: 2px 2px 4px var(--lavender-floral);
-}
-
 .new-cats {
   margin-bottom: 30px;
-}
-
-.section-result {
-  align-items: center;
-  width: 400px;
 }
 
 .buttons {
@@ -216,7 +226,7 @@ section {
 }
 
 #save {
- margin: 15px; 
+margin: 15px; 
 }
 
 button {
@@ -307,6 +317,7 @@ button:active {
   padding: 5px 50px;
   border-radius: 15px;
 }
+
 
 .color {
   margin-top: 10px;
