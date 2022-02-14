@@ -296,6 +296,7 @@ button:active {
 
 .clean-text {
   align-self: center;
+  margin-bottom: 15px;
 }
 
 #save, .clean {
@@ -315,8 +316,7 @@ button:active {
   width: 35px;
   background-color: blue;
   margin-right: 5px;
-  border-color: rgb(0, 0, 0);
-  border-style:double;
+  border: 4px double rgba(0, 0, 0, 0.4);
   border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
@@ -326,8 +326,7 @@ button:active {
   width: 35px;
   background-color: rgb(173, 37, 173);
   margin-right: 5px;
-  border-color: rgb(0, 0, 0);
-  border-style:double;
+  border: 4px double rgba(0, 0, 0, 0.4);
   border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
@@ -337,8 +336,7 @@ button:active {
   width: 35px;
   background-color: rgb(70, 192, 125);
   margin-right: 5px;
-  border-color: rgb(0, 0, 0);
-  border-style:double;
+  border: 4px double rgba(0, 0, 0, 0.4);
   border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
@@ -348,8 +346,7 @@ button:active {
   width: 35px;
   background-color: rgb(214, 86, 26);
   margin-right: 5px;
-  border-color: rgb(0, 0, 0);
-  border-style:double;
+  border: 4px double rgba(0, 0, 0, 0.4);
   border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
@@ -357,10 +354,9 @@ button:active {
 .decoration4 {
   height: 35px;
   width: 35px;
-  background-color: rgb(251, 255, 32);
-  border-color: rgb(0, 0, 0);
   margin-right: 5px;
-  border-style:double;
+  background-color: rgb(251, 255, 32);
+  border: 4px double rgba(0, 0, 0, 0.4);
   border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
@@ -369,8 +365,7 @@ button:active {
   height: 35px;
   width: 35px;
   background-color: rgb(255, 255, 255);
-  border-color: rgb(0, 0, 0);
-  border-style:double;
+  border: 4px double rgba(0, 0, 0, 0.4);
   border-bottom-left-radius: 1px;
   border-radius: 50%;
 }
