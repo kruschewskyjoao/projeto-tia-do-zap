@@ -1,4 +1,4 @@
-const meaw = new Audio('soundOfCat.mp3');
+// const meaw = new Audio('soundOfCat.mp3');
 
 const gettingData = async () => {
     const url = `https://api.thecatapi.com/v1/images/search?limit=6&page=10&order=Desc`;
@@ -98,6 +98,7 @@ const opDown = document.querySelector('.p-down');
 opDown.addEventListener('click', createText);
 
 //Limpar texto:
+function clearText() {
 const cleanText = document.querySelector('.clean')
 cleanText.addEventListener('click', () => {
     const paragraphs = document.querySelectorAll('.textImage');
@@ -106,6 +107,7 @@ cleanText.addEventListener('click', () => {
     });
     meaw.play();
 });
+}
 
 // Tentativa de fazer o botão de download:
 // Link de referência para download: https://dev.to/cjuniordev/transformando-html-em-imagens-2k5e
@@ -247,4 +249,24 @@ window.onload = async () => {
 
    createClickImage();
 }
- 
+
+module.exports = {
+    gettingData,
+    createKitty,
+    createClickImage,
+    clearText,
+    changeColorPink,
+    changeColorPurple,
+    changeColorGreen,
+    changeColorRed,
+    changeColorYellow,
+    changeColorWhite,
+    changeFont,
+    changeFont2,
+    changeFont1,
+    changeFont3,
+    changeSize1,
+    changeSize2,
+    changeSize3,
+    changeSize4,
+  };

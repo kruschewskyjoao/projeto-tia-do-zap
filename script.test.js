@@ -1,4 +1,22 @@
-const memeCats = require('./script');
+const { gettingData,
+  createKitty,
+  createClickImage,
+  clearText,
+  changeColorPink,
+  changeColorPurple,
+  changeColorGreen,
+  changeColorRed,
+  changeColorYellow,
+  changeColorWhite,
+  changeFont,
+  changeFont2,
+  changeFont1,
+  changeFont3,
+  changeSize1,
+  changeSize2,
+  changeSize3,
+  changeSize4, } = require('./script');
+
 
 describe('Teste a função gettingData', () => {
   it('Com o argumento vazio, a função fetch deve ser chamada', async () => {
@@ -14,3 +32,5 @@ describe('Teste a função createKitty', () => {
     expect(ol.children).toHaveLength(6);
   })
 })
+
+
